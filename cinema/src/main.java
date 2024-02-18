@@ -35,7 +35,7 @@ public class main {
   // Inizializzazione del singleton Cinema
   Cinema cinema = Cinema.getInstance();
 
-  double sovrapprezzoWeekend = 0; // Sovrapprezzo del 20%
+  double sovrapprezzoWeekend = 20; // Sovrapprezzo del 20%
   cinema.getGestorePrezzi().setSovrapprezzoWeekend(sovrapprezzoWeekend);
 
 
@@ -69,11 +69,11 @@ public class main {
   amministratore.eseguiComando(new CreateOrUpdateSpettacoloCommand(filmInterstellar, 1, orarioProiezioneInterstellar));
 
   // Programmazione di uno spettacolo per "Fast and Furious"
-  LocalDateTime orarioProiezionefast = LocalDateTime.of(2024, 2, 17, 23, 0);
+  LocalDateTime orarioProiezionefast = LocalDateTime.of(2024, 2, 18, 18, 0);
   amministratore.eseguiComando(new CreateOrUpdateSpettacoloCommand(filmFastAndFurious, 1, orarioProiezionefast));
 
   // Programmazione di un secondo spettacolo per "Fast and Furious".
-  LocalDateTime orarioProiezionefast2 = LocalDateTime.of(2024, 2, 17, 23, 0);
+  LocalDateTime orarioProiezionefast2 = LocalDateTime.of(2024, 2, 19, 20, 30);
   amministratore.eseguiComando(new CreateOrUpdateSpettacoloCommand(filmFastAndFurious, 1, orarioProiezionefast2));
 
   // Impostazione dei prezzi dei biglietti

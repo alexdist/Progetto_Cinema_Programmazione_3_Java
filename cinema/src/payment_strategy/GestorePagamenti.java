@@ -1,21 +1,6 @@
 package Cinema.payment_strategy;
 
-//public class GestorePagamenti {
-//    private IPagamentoStrategy metodoPagamento;
-//
-//    public GestorePagamenti(IPagamentoStrategy metodoPagamento) {
-//        this.metodoPagamento = metodoPagamento;
-//    }
-//
-//    public void effettuaPagamento(double importo) {
-//        metodoPagamento.paga(importo);
-//    }
-//
-//    // Metodo per cambiare dinamicamente il metodo di pagamento
-//    public void setMetodoPagamento(IPagamentoStrategy metodoPagamento) {
-//        this.metodoPagamento = metodoPagamento;
-//    }
-//}
+
 
 import Cinema.exception.PagamentoFallitoException;
 
