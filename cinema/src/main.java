@@ -32,6 +32,8 @@ import Cinema.singleton.*;
 public class main {
  public static void main(String[] args) {
 
+  //Prova Modifica
+
   // Inizializzazione del singleton Cinema
   Cinema cinema = Cinema.getInstance();
 
