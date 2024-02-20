@@ -45,7 +45,7 @@ public class main {
   Amministratore amministratore = new Amministratore("NomeAdmin", "CognomeAdmin", Ruolo.AMMINISTRATORE);
 
   // Aggiunta di una sala
-  Sala sala = new Sala(1, 100);
+  Sala sala = new Sala(1, 4);
   amministratore.eseguiComando(new AggiungiSalaCommand(sala));
 
   //Aggiunta di una seconda sala
@@ -67,15 +67,15 @@ public class main {
 
 
   // Programmazione di uno spettacolo per "Interstellar"
-  LocalDateTime orarioProiezioneInterstellar = LocalDateTime.of(2024, 2, 17, 20, 0);
+  LocalDateTime orarioProiezioneInterstellar = LocalDateTime.of(2024, 2, 17, 21, 0);
   amministratore.eseguiComando(new CreateOrUpdateSpettacoloCommand(filmInterstellar, 1, orarioProiezioneInterstellar));
 
   // Programmazione di uno spettacolo per "Fast and Furious"
-  LocalDateTime orarioProiezionefast = LocalDateTime.of(2024, 2, 18, 18, 0);
+  LocalDateTime orarioProiezionefast = LocalDateTime.of(2024, 2, 17, 18, 0);
   amministratore.eseguiComando(new CreateOrUpdateSpettacoloCommand(filmFastAndFurious, 1, orarioProiezionefast));
 
   // Programmazione di un secondo spettacolo per "Fast and Furious".
-  LocalDateTime orarioProiezionefast2 = LocalDateTime.of(2024, 2, 19, 20, 30);
+  LocalDateTime orarioProiezionefast2 = LocalDateTime.of(2024, 2, 18, 20, 30);
   amministratore.eseguiComando(new CreateOrUpdateSpettacoloCommand(filmFastAndFurious, 1, orarioProiezionefast2));
 
   // Impostazione dei prezzi dei biglietti
